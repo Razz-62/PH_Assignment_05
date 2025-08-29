@@ -1,8 +1,3 @@
-
-let heart = 0;
-let coins = 100;
-let copy = 0;
-
 const heartCounter = document.getElementById("heartCnt");
 const coinCounter = document.getElementById("coinCnt");
 const copyCounter = document.getElementById("copyCnt");
@@ -21,6 +16,10 @@ function getTime() {
 
     return `${hours}:${minutes}:${seconds} ${ampm}`;
 }
+
+let heart = 0;
+let coins = 100;
+let copy = 0;
 
 function updateCnt() {
     heartCounter.innerText = heart;
@@ -43,18 +42,14 @@ function callHistory(name, number) {
     `;
     history.append(div);
 }
-
 const cards = document.querySelectorAll(".bg-white.rounded-lg");
 
 for (let card of cards) {
     const name = card.querySelector("h3").innerText;
     const number = card.querySelector("p.text-2xl").innerText;
-
     const heartBtn = card.querySelector(".heartButton");
     const callBtn = card.querySelector(".callButton");
     const copyBtn = card.querySelector(".copyButton");
-    
-
 
     if (heartBtn) {
         heartBtn.addEventListener("click", () => {
@@ -88,14 +83,11 @@ for (let card of cards) {
         });
     }
 }
-
 if (clearButton) {
     clearButton.addEventListener("click", () => {
         history.innerHTML = "";
     });
 }
-
-
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
