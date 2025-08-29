@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-green-100">
+    <nav class="bg-white w-full shadow-md z-50 ">
+        <div class=" mx-auto w-[90%] flex justify-between items-center p-4 ">
+            <div class="flex items-center">
+                <img src="assets/logo.png" class="w-12 h-12" alt="Logo">
+                <h4 class="text-xl font-bold text-green-700 ml-2">Emergency <br>Services</h4>
+            </div>
+            <!-- Desktop  -->
+            <div class="hidden md:flex space-x-5 items-center">
+                <div class="flex items-center px-3 py-1 bg-green-100 rounded-full">
+                    <span id="heartCnt" class="px-1">0</span>
+                    <img src="assets/heart.png" alt="" class="w-6 h-6">
+                </div>
+                <div class="flex items-center px-3 py-1 bg-green-100 rounded-full">
+                    <span id="coinCnt" class="px-1">100</span>
+                    <img src="assets/coin.png" alt="" class="w-6 h-6">
+                    
+                </div>
+
+                <div class="flex items-center px-3 py-1 bg-green-600 rounded-full text-white" id="copyBtn">
+                    <p><span id="copyCnt" class="px-1">0</span> Copy</p>
+                </div>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <ul class="flex flex-col space-y-4 p-4 text-lg font-medium">
+                <li class="flex items-center bg-[#41ff6b1a] px-3 py-1 rounded-full">
+                    <img src="assets/heart.png" class="w-6 h-6">
+                    <span id="heartCountMobile" class="px-1">0</span>
+                </li>
+                <li class="flex items-center bg-[#41ff6b1a] px-3 py-1 rounded-full">
+                    <img src="assets/coin.png" class="w-6 h-6">
+                    <span id="coinCountMobile" class="px-1">100</span>
+                </li>
+                <li class="flex items-center bg-green-600 text-white px-3 py-1 rounded-full">
+                    <span id="copyCountMobile" class="px-1">0</span> Copy
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] text-center text-white py-4 px-4 sm:px-6 lg:px-20 ">
+        <img src="assets/logo-dark.png" alt="" class="w-16 mx-auto mb-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">Emergency Services Directory</h2>
+        <p class="mt-2 text-sm md:text-md">Government Emergency Services at your Fingertip- A project by Government of the people's of Republic of Bangladesh</p>
+    </section>
+
+</body>
+
+</html>
