@@ -27,14 +27,14 @@
 
                 </div>
 
-                <div class="flex items-center px-3 py-1 bg-green-600 rounded-full text-white" id="copyBtn">
+                <div class="flex items-center px-3 py-1 bg-green-600 rounded-full text-white" id="copyButton">
                     <p><span id="copyCnt" class="px-1">0</span> Copy</p>
                 </div>
             </div>
 
             <!-- Mobile Hamburger -->
             <div class="md:hidden">
-                <button id="menu-btn" class="focus:outline-none">
+                <button id="menuBtn" class="focus:outline-none">
                     <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -45,18 +45,18 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <ul class="flex flex-col space-y-4 p-4 text-lg font-medium">
-                <li class="flex items-center bg-[#41ff6b1a] px-3 py-1 rounded-full">
+        <div id="mobileMenu" class="hidden md:hidden bg-white flex justify-center">
+            <ul class="flex flex-col items-center space-y-4 p-4 text-lg font-medium">
+                <li class="flex items-center bg-green-100 px-3 py-1 rounded-full">
                     <img src="assets/heart.png" class="w-6 h-6">
-                    <span id="heartCountMobile" class="px-1">0</span>
+                    <span id="heartCntMobile" class="px-1">0</span>
                 </li>
-                <li class="flex items-center bg-[#41ff6b1a] px-3 py-1 rounded-full">
+                <li class="flex items-center bg-green-100 px-3 py-1 rounded-full">
                     <img src="assets/coin.png" class="w-6 h-6">
-                    <span id="coinCountMobile" class="px-1">100</span>
+                    <span id="coinCntMobile" class="px-1">100</span>
                 </li>
                 <li class="flex items-center bg-green-600 text-white px-3 py-1 rounded-full">
-                    <span id="copyCountMobile" class="px-1">0</span> Copy
+                    <span id="copyCntMobile" class="px-1">0</span> Copy
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -89,18 +89,18 @@
                         <p class="text-gray-500 text-sm">National Emergency</p>
                         <p class="text-2xl font-bold mt-3">999</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             All
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -111,7 +111,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/police.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -119,18 +119,18 @@
                         <p class="text-gray-500 text-sm">Police</p>
                         <p class="text-2xl font-bold mt-3">999</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             police
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -142,7 +142,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/fire-service.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -150,18 +150,18 @@
                         <p class="text-gray-500 text-sm">Fire service</p>
                         <p class="text-2xl font-bold mt-3">999</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Fire
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -173,7 +173,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/ambulance.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -181,18 +181,18 @@
                         <p class="text-gray-500 text-sm">Ambulance</p>
                         <p class="text-2xl font-bold mt-3">1994-999999</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Health
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -204,7 +204,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -212,18 +212,18 @@
                         <p class="text-gray-500 text-sm">Women and Child Helpline</p>
                         <p class="text-2xl font-bold mt-3">109</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Help
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -236,7 +236,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -244,18 +244,18 @@
                         <p class="text-gray-500 text-sm">Anti-Corruption</p>
                         <p class="text-2xl font-bold mt-3">106</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Govt.
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -268,7 +268,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -276,18 +276,18 @@
                         <p class="text-gray-500 text-sm">Electricity</p>
                         <p class="text-2xl font-bold mt-3">16216</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Electricity
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -299,7 +299,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -307,18 +307,18 @@
                         <p class="text-gray-500 text-sm">Brac</p>
                         <p class="text-2xl font-bold mt-3">16445</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             NGO
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -330,7 +330,7 @@
                     <div class="bg-white rounded-lg shadow-lg p-5 ">
                         <div class="flex justify-between items-start ">
                             <img src="assets/emergency.png" alt="" class="w-12 h-12 rounded-lg bg-red-100 p-2">
-                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartBtn mt-3">
+                            <button class="text-gray-700 over:text-red-500 h-5 w-5 heartButton mt-3">
                                 <img src="assets/icon-heart.png" alt="">
                             </button>
                         </div>
@@ -338,18 +338,18 @@
                         <p class="text-gray-500 text-sm">BD Railway</p>
                         <p class="text-2xl font-bold mt-3">163</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyBtn">
+                            class="inline-block mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium hover:bg-gray-100 copyButton">
                             Travel
                         </span>
 
                         <div class="flex gap-3 mt-4">
                             <button
-                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyBtn">
+                                class="flex justify-center items-center border rounded-lg py-2 px-4 text-sm font-medium hover:bg-gray-50 w-full copyButton">
                                 <img src="assets/copy.png" alt="" class="w-4 h-4 mx-1 ">Copy
                             </button>
 
                             <button
-                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callBtn">
+                                class="flex bg-green-500 text-white justify-center items-center border rounded-lg py-2 px-2 text-sm font-medium hover:bg-green-600 w-full callButton">
                                 <img src="assets/tele.png" alt="" class="w-4 h-4 mx-1 ">Call
                             </button>
                         </div>
@@ -364,7 +364,7 @@
             <div class="col-span-12 lg:col-span-3">
                 <div class="flex bg-white rounded-sm shadow-lg p-5 h-full flex-col">
                     <!-- head -->
-                     <div class="flex justify-between items-center mb-5">
+                    <div class="flex justify-between items-center mb-5">
                         <h2 class="font-bold text-lg flex items-center mb-4">
                             <img src="assets/history.png" alt="" class="w-5 h-5 mr-2">Call History
                         </h2>
@@ -372,18 +372,18 @@
                         <button id="clearButton" onclick="clear()" class="
                         bg-green-500 text-white text-md px-6 py-1 rounded-full"> Clear</button>
 
-                     </div>
+                    </div>
 
-                    <div id="historyList" class="flex flex-col gap-4 overflow-y-auto">
-                        <p class="text-gray-500">No call history yet.</p>
+                    <div id="history" class="flex flex-col gap-4 overflow-y-auto">
+
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-
-
     </section>
+
+    <script src="javascript.js"></script>
 
 </body>
 
