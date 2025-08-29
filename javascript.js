@@ -61,19 +61,19 @@ for (let card of cards) {
             heart++;
             heartCounter.innerText = heart;
             updateCnt();
-            heartBtn.classList.toggle("text-red-500");
+            heartBtn.classList.toggle("text-red-600");
         });
     }
     if (callBtn) {
         callBtn.addEventListener("click", () => {
             if (coins < 20) {
-                alert("You need at least 20 coins to make a call");
+                alert("insufficient coins! 20 coins are required to make a call");
                 return;
             }
             coins -= 20;
             coinCounter.innerText = coins;
             updateCnt();
-            alert(`Calling ${name} at ${number}`);
+            alert(`Calling ${name} - ${number}`);
             callHistory(name, number);
         });
     }
@@ -83,7 +83,7 @@ for (let card of cards) {
                 copy++;
                 copyCounter.innerText = copy;
                 updateCnt();
-                alert(`Copied ${number} to clipboard`);
+                alert(`${number} - Copied to clipboard`);
             });
         });
     }
